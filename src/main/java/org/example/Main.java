@@ -6,6 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
         TestInterview fizzBuzzTestInterviewTest = new TestInterview();
-        fizzBuzzTestInterviewTest.printlnVal();
+        System.out.println(fizzBuzzTestInterviewTest.coinChange(new int[]{186,419,83,408}, 6249));
+//        System.out.println(fizzBuzzTestInterviewTest.coinChange(new int[]{5,4}, 13));
+//        System.out.println(fizzBuzzTestInterviewTest.coinChange(new int[]{1,2,5}, 11));
     }
 }
