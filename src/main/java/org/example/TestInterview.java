@@ -173,4 +173,18 @@ public class TestInterview {
         hashMap.put("sum", sum);
         return hashMap;
     }
+
+    public boolean isPalindrome(String s) {
+        s = s.toLowerCase().replaceAll("[^a-z0-9]", "");
+        char[] sChar = s.toCharArray();
+//        System.out.println(sChar);
+        int i = 0;
+        for (int j = sChar.length-1; j >= sChar.length / 2; j--) {
+//            StringBuilder stringBuilder = new StringBuilder();
+//            System.out.println(stringBuilder.append("j = ").append(j).append(" i = ").append(i));
+            if (sChar[i] != sChar[j]) return false;
+            i++;
+        }
+        return true;
+    }
 }
